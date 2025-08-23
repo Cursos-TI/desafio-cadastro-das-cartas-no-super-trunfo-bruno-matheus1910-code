@@ -1,75 +1,75 @@
 #include <stdio.h>
 
 int main() {
-    // Declaração de variáveis para a Carta 1
-    char estado1;
-    char codigo1[4];
-    char nomeCidade1[100];
+    // Dados da Carta 1
+    char estado1[3];           // Ex: "SP"
+    char codigo1[4];           // Ex: "A01"
+    char nomeCidade1[100];     // Nome da cidade com espaços
     int populacao1;
     float area1;
     float pib1;
     int pontosTuristicos1;
 
-    // Declaração de variáveis para a Carta 2
-    char estado2;
-    char codigo2[4];
+    // Dados da Carta 2
+    char estado2[3];           // Ex: "RJ"
+    char codigo2[4];           // Ex: "B02"
     char nomeCidade2[100];
     int populacao2;
     float area2;
     float pib2;
     int pontosTuristicos2;
 
-    // Leitura dos dados da Carta 1
-    printf("=== Cadastro da Carta 1 ===\n");
+    // ===== Cadastro da Carta 1 =====
+    printf("Cadastro da Carta 1:\n");
 
-    printf("Informe o Estado (A-H): ");
-    scanf(" %c", &estado1);
+    printf("Estado (ex: SP): ");
+    scanf("%s", estado1);
 
-    printf("Informe o Código da Carta (ex: A01): ");
+    printf("Código da Carta (ex: A01): ");
     scanf("%s", codigo1);
 
-    printf("Informe o Nome da Cidade: ");
-    scanf(" %[^\n]", nomeCidade1);  // Lê até a quebra de linha
+    printf("Nome da Cidade: ");
+    scanf(" %[^\n]", nomeCidade1); // Permite ler com espaços
 
-    printf("Informe a População: ");
+    printf("População: ");
     scanf("%d", &populacao1);
 
-    printf("Informe a Área (em km²): ");
+    printf("Área (em km²): ");
     scanf("%f", &area1);
 
-    printf("Informe o PIB (em bilhões de reais): ");
+    printf("PIB (em bilhões de reais): ");
     scanf("%f", &pib1);
 
-    printf("Informe o Número de Pontos Turísticos: ");
+    printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Leitura dos dados da Carta 2
-    printf("\n=== Cadastro da Carta 2 ===\n");
+    // ===== Cadastro da Carta 2 =====
+    printf("\nCadastro da Carta 2:\n");
 
-    printf("Informe o Estado (A-H): ");
-    scanf(" %c", &estado2);
+    printf("Estado (ex: RJ): ");
+    scanf("%s", estado2);
 
-    printf("Informe o Código da Carta (ex: B02): ");
+    printf("Código da Carta (ex: B02): ");
     scanf("%s", codigo2);
 
-    printf("Informe o Nome da Cidade: ");
+    printf("Nome da Cidade: ");
     scanf(" %[^\n]", nomeCidade2);
 
-    printf("Informe a População: ");
+    printf("População: ");
     scanf("%d", &populacao2);
 
-    printf("Informe a Área (em km²): ");
+    printf("Área (em km²): ");
     scanf("%f", &area2);
 
-    printf("Informe o PIB (em bilhões de reais): ");
+    printf("PIB (em bilhões de reais): ");
     scanf("%f", &pib2);
 
-    printf("Informe o Número de Pontos Turísticos: ");
+    printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Exibição dos dados da Carta 1
-    printf("\n=== Carta 1 ===\n");
-    printf("Estado: %c\n", estado1);
+    // ===== Exibição dos dados da Carta 1 =====
+    printf("\n--- Carta 1 ---\n");
+    printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
@@ -77,9 +77,9 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 
-    // Exibição dos dados da Carta 2
-    printf("\n=== Carta 2 ===\n");
-    printf("Estado: %c\n", estado2);
+    // ===== Exibição dos dados da Carta 2 =====
+    printf("\n--- Carta 2 ---\n");
+    printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
